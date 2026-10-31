@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing — Driven3 Recovery</title>
+  <meta name="description" content="Transparent recovery pricing. Estimate your price in seconds — fixed on the phone before we set off.">
+  <meta name="theme-color" content="#121314">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="pricing">
+<main id="main">
+
+  <section class="page-hero dark on-dark">
+    <div class="media-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1686966933735-305bd8fe0a77?auto=format&fit=crop&w=2000&q=70" alt="" fetchpriority="high"></div>
+    <div class="wrap page-hero-grid">
+      <div>
+        <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Pricing</span></div>
+        <h1 class="display">The price we say<br>is the <span class="hl">price you pay.</span></h1>
+        <p class="lede">No call-out fee, no “it's dark so it's double”, no surprise storage bills. Work out a ballpark below, then call and we'll fix it.</p>
+      </div>
+    </div>
+  </section>
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section class="section-tight">
+    <form class="wrap estimator js-estimator" onsubmit="return false">
+      <div class="est-form">
+        <fieldset class="est-group">
+          <legend><span class="stepnum">1</span>What do you need?</legend>
+          <div class="opt-grid">
+            <div class="opt"><input type="radio" name="service" id="s-breakdown" value="breakdown" checked><label for="s-breakdown"><svg class="icon"><use href="#i-tow"/></svg>Breakdown recovery<small>from £75</small></label></div>
+            <div class="opt"><input type="radio" name="service" id="s-accident" value="accident"><label for="s-accident"><svg class="icon"><use href="#i-alert"/></svg>Accident recovery<small>from £95</small></label></div>
+            <div class="opt"><input type="radio" name="service" id="s-transport" value="transport"><label for="s-transport"><svg class="icon"><use href="#i-route"/></svg>Planned transport<small>from £90</small></label></div>
+            <div class="opt"><input type="radio" name="service" id="s-tyres" value="tyres"><label for="s-tyres"><svg class="icon"><use href="#i-tyre"/></svg>Tyre fitting<small>from £55 + tyre</small></label></div>
+            <div class="opt"><input type="radio" name="service" id="s-jumpstart" value="jumpstart"><label for="s-jumpstart"><svg class="icon"><use href="#i-battery"/></svg>Jump start<small>from £45</small></label></div>
+            <div class="opt"><input type="radio" name="service" id="s-bike" value="bike"><label for="s-bike"><svg class="icon"><use href="#i-bike"/></svg>Motorbike<small>from £70</small></label></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="est-group">
+          <legend><span class="stepnum">2</span>What's the vehicle?</legend>
+          <div class="opt-grid">
+            <div class="opt"><input type="radio" name="vehicle" id="v-car" value="car" checked><label for="v-car"><svg class="icon"><use href="#i-car"/></svg>Car<small>standard</small></label></div>
+            <div class="opt"><input type="radio" name="vehicle" id="v-suv" value="suv"><label for="v-suv"><svg class="icon"><use href="#i-suv"/></svg>4×4 / SUV<small>+£15</small></label></div>
+            <div class="opt"><input type="radio" name="vehicle" id="v-van" value="van"><label for="v-van"><svg class="icon"><use href="#i-van"/></svg>Van<small>up to 3.5t · +£25</small></label></div>
+            <div class="opt"><input type="radio" name="vehicle" id="v-bike" value="bike"><label for="v-bike"><svg class="icon"><use href="#i-bike"/></svg>Motorbike<small>−£10</small></label></div>
+          </div>
+        </fieldset>
+
+        <div class="est-group">
+          <div class="gtitle"><span class="stepnum">3</span>How far are we taking it?</div>
+          <div class="range-wrap">
+            <div class="range-top">
+              <label for="distance">Distance to drop-off</label>
+              <output class="js-miles" for="distance">10 <small>miles</small></output>
+            </div>
+            <input type="range" id="distance" min="1" max="150" value="10">
+            <div class="range-scale"><span>1 mi</span><span>First 10 miles free</span><span>150 mi</span></div>
+          </div>
+        </div>
+
+        <div class="est-group">
+          <div class="gtitle"><span class="stepnum">4</span>Anything else?</div>
+          <div class="toggles">
+            <label class="toggle"><input type="checkbox" id="night"><span>It's between 10pm and 6am<small>Night rate adds 20% — still no call-out fee.</small></span><i class="switch"></i></label>
+            <label class="toggle"><input type="checkbox" id="locked"><span>The wheels won't turn<small>Seized brakes, crash damage, or locked steering.</small></span><i class="switch"></i></label>
+          </div>
+        </div>
+      </div>
+
+      <aside class="quote" aria-live="polite">
+        <div class="quote-head"><span class="label on-dark">Your estimate</span></div>
+        <div class="quote-total">
+          <strong class="js-total">£75–£89</strong>
+          <span>Estimated total, VAT included</span>
+        </div>
+        <ul class="quote-lines js-lines"></ul>
+        <div class="quote-cta">
+          <a class="btn btn-amber btn-block btn-lg" data-tel href="#" data-icon="phone">Call to lock this price</a>
+          <p>This is a guide. Your exact price is fixed on the phone before we set off — it won't go up after.</p>
+        </div>
+      </aside>
+    </form>
+  </section>
+
+  <section class="section-tight paper-2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="label">Full price list</span>
+        <h2 class="display h2">Everything, written down.</h2>
+      </div>
+      <div class="table-scroll reveal">
+        <table class="price-table">
+          <thead><tr><th>Service</th><th>From</th><th>What's included</th><th>Extras</th></tr></thead>
+          <tbody>
+            <tr><td>Breakdown recovery</td><td class="num">£75</td><td>Roadside check, first 10 miles, 2 passengers</td><td>£1.80/mile after 10 miles</td></tr>
+            <tr><td>Accident recovery</td><td class="num">£95</td><td>Scene clearance, first 10 miles, 48 hrs storage</td><td>Skates/winch £30</td></tr>
+            <tr><td>Mobile tyre fitting</td><td class="num">£55</td><td>Fitting, balancing, valve, disposal</td><td>Tyre priced by size</td></tr>
+            <tr><td>Jump start</td><td class="num">£45</td><td>Jump, battery &amp; alternator test</td><td>Batteries from £95 fitted</td></tr>
+            <tr><td>Vehicle transport</td><td class="num">£90</td><td>Photo updates, first 10 miles</td><td>£1.80/mile, long-distance fixed quotes</td></tr>
+            <tr><td>Motorbike recovery</td><td class="num">£70</td><td>Cradle &amp; soft straps, first 10 miles</td><td>£1.80/mile after 10 miles</td></tr>
+            <tr><td>Scrap collection</td><td class="num">Free</td><td>Collection, CoD, DVLA notification</td><td>We pay you by weight</td></tr>
+            <tr><td>Storage</td><td class="num">£0</td><td>First 48 hours in our secure yard</td><td>£15/day after</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark on-dark">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="label">Our pricing promise</span>
+        <h2 class="display h2">Three things we'll never do.</h2>
+      </div>
+      <div class="promise-grid reveal">
+        <div class="promise"><svg class="icon"><use href="#i-pound"/></svg><h3>Charge a call-out fee</h3><p>You pay for the job, not for us picking up the phone or turning the key in the truck.</p></div>
+        <div class="promise"><svg class="icon"><use href="#i-lock"/></svg><h3>Change the price on arrival</h3><p>If we've quoted it, that's the price — even if the job turns out harder than we thought.</p></div>
+        <div class="promise"><svg class="icon"><use href="#i-clock"/></svg><h3>Hold your car to ransom</h3><p>48 hours of storage are free, and we'll always tell you before any daily charge starts.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/main.js"></script>
+</body>
+</html>

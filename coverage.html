@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coverage — Driven3 Recovery</title>
+  <meta name="description" content="Rapid-response vehicle recovery across Greater Manchester, Lancashire, West Yorkshire, Cheshire and Merseyside.">
+  <meta name="theme-color" content="#121314">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="coverage">
+<main id="main">
+
+  <section class="page-hero dark on-dark">
+    <div class="media-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1712959079456-f7b55a07ff8c?auto=format&fit=crop&w=2000&q=70" alt="" fetchpriority="high"></div>
+    <div class="wrap page-hero-grid">
+      <div>
+        <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Coverage</span></div>
+        <h1 class="display">Are we <span class="hl">near you?</span></h1>
+        <p class="lede">Almost certainly. Type your postcode — even just the first half — and we'll tell you how long it usually takes us to get there.</p>
+        <form class="postcode js-postcode" role="search">
+          <label class="visually-hidden" for="pc">Postcode</label>
+          <input id="pc" type="text" placeholder="e.g. M14 or OL9 7AH" autocomplete="postal-code" maxlength="8">
+          <button class="btn btn-amber btn-lg" type="submit">Check</button>
+        </form>
+        <p class="pc-result" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="wrap coverage">
+      <div class="map-card reveal">
+        <svg viewBox="0 0 500 430" role="img" aria-label="Map of our coverage area centred on Oldham">
+          <g stroke="#34383c" stroke-width="3" fill="none" stroke-linecap="round">
+            <path d="M60 285C110 270 170 230 215 205S320 200 360 190 400 140 420 120"/>
+            <path d="M140 400L138 290 140 215 120 120 110 30"/>
+            <path d="M200 215L178 200 120 125"/>
+            <circle cx="232" cy="240" r="34"/>
+          </g>
+          <g font-family="JetBrains Mono, monospace" font-size="10" fill="#5d6166">
+            <text x="392" y="168">M62</text><text x="146" y="380">M6</text><text x="158" y="160">M61</text><text x="268" y="262">M60</text>
+          </g>
+          <circle class="ring" cx="262" cy="222" r="60"/>
+          <circle class="ring" cx="262" cy="222" r="125"/>
+          <circle class="ring" cx="262" cy="222" r="195"/>
+          <g fill="#cfcdc6">
+            <circle cx="232" cy="240" r="4"/><circle cx="262" cy="188" r="3.5"/><circle cx="178" cy="200" r="3.5"/>
+            <circle cx="215" cy="190" r="3.5"/><circle cx="262" cy="282" r="3.5"/><circle cx="140" cy="215" r="3.5"/>
+            <circle cx="138" cy="290" r="3.5"/><circle cx="360" cy="195" r="3.5"/><circle cx="350" cy="150" r="3.5"/>
+            <circle cx="112" cy="118" r="3.5"/><circle cx="165" cy="140" r="3.5"/><circle cx="60" cy="285" r="3.5"/>
+            <circle cx="420" cy="120" r="3.5"/><circle cx="270" cy="340" r="3.5"/>
+          </g>
+          <text class="town-label" x="200" y="258">Manchester</text>
+          <text class="town-label" x="270" y="184">Rochdale</text>
+          <text class="town-label" x="150" y="194">Bolton</text>
+          <text class="town-label" x="204" y="182">Bury</text>
+          <text class="town-label" x="270" y="290">Stockport</text>
+          <text class="town-label" x="104" y="210">Wigan</text>
+          <text class="town-label" x="90" y="306">Warrington</text>
+          <text class="town-label" x="368" y="208">Huddersfield</text>
+          <text class="town-label" x="358" y="146">Halifax</text>
+          <text class="town-label" x="72" y="112">Preston</text>
+          <text class="town-label" x="172" y="136">Blackburn</text>
+          <text class="town-label" x="30" y="302">Liverpool</text>
+          <text class="town-label" x="428" y="116">Leeds</text>
+          <text class="town-label" x="278" y="344">Macclesfield</text>
+          <circle cx="262" cy="222" r="14" fill="#ffb81c" opacity=".2"/>
+          <circle cx="262" cy="222" r="7" fill="#ffb81c"/>
+          <text class="town-label hq" x="274" y="226">OLDHAM · HQ</text>
+        </svg>
+        <div class="map-legend"><span><i style="background:#ffb81c"></i>Yard</span><span><i style="border:1px dashed #ffb81c"></i>≈ 15 / 30 / 50 min</span></div>
+      </div>
+      <div class="reveal" style="display:grid;gap:22px">
+        <span class="label">How we cover it</span>
+        <h2 class="display h2">Nine trucks, parked where you'll need them.</h2>
+        <p class="lede">We don't run everything out of one yard. Drivers take their trucks home across the region, so the nearest free one is dispatched — usually within minutes of your call.</p>
+        <ul class="eta-list">
+          <li>Trucks on the road right now <span class="eta"><span class="pulse"></span>5 of 9 free</span></li>
+          <li>Quickest arrival this week <span class="eta">11 min · Chadderton</span></li>
+          <li>Average across the region <span class="eta">31 min</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight paper-2">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="label">Areas</span>
+        <h2 class="display h2">Where we go every day.</h2>
+      </div>
+      <div class="region-grid reveal">
+        <div class="region">
+          <div class="region-head"><h3 class="display h3">Greater Manchester</h3><span class="eta-chip">15–30 min</span></div>
+          <ul><li>Manchester</li><li>Salford</li><li>Oldham</li><li>Rochdale</li><li>Bury</li><li>Bolton</li><li>Wigan</li><li>Stockport</li><li>Tameside</li><li>Trafford</li></ul>
+        </div>
+        <div class="region">
+          <div class="region-head"><h3 class="display h3">West Yorkshire</h3><span class="eta-chip">35–50 min</span></div>
+          <ul><li>Huddersfield</li><li>Halifax</li><li>Bradford</li><li>Leeds</li><li>Wakefield</li><li>Saddleworth</li></ul>
+        </div>
+        <div class="region">
+          <div class="region-head"><h3 class="display h3">Lancashire</h3><span class="eta-chip">35–55 min</span></div>
+          <ul><li>Blackburn</li><li>Burnley</li><li>Preston</li><li>Chorley</li><li>Rossendale</li><li>Accrington</li></ul>
+        </div>
+        <div class="region">
+          <div class="region-head"><h3 class="display h3">Cheshire</h3><span class="eta-chip">30–50 min</span></div>
+          <ul><li>Warrington</li><li>Macclesfield</li><li>Wilmslow</li><li>Knutsford</li><li>Crewe</li><li>Northwich</li></ul>
+        </div>
+        <div class="region">
+          <div class="region-head"><h3 class="display h3">Merseyside</h3><span class="eta-chip">45–60 min</span></div>
+          <ul><li>Liverpool</li><li>St Helens</li><li>Wirral</li><li>Knowsley</li><li>Southport</li></ul>
+        </div>
+        <div class="region">
+          <div class="region-head"><h3 class="display h3">Further afield</h3><span class="eta-chip">Booked</span></div>
+          <ul><li>Anywhere on the UK mainland</li><li>Fixed long-distance price</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head split reveal">
+        <div style="display:grid;gap:18px">
+          <span class="label">Motorways &amp; main roads</span>
+          <h2 class="display h2">We know these by heart.</h2>
+        </div>
+        <p class="lede">Stopped on one of these? Note the nearest junction or the blue marker post — it gets us to you faster.</p>
+      </div>
+      <div class="roads reveal">
+        <span class="road-sign">M60</span><span class="road-sign">M62</span><span class="road-sign">M6</span><span class="road-sign">M61</span>
+        <span class="road-sign">M66</span><span class="road-sign">M56</span><span class="road-sign">M65</span><span class="road-sign">M602</span>
+        <span class="road-sign a">A627(M)</span><span class="road-sign a">A62</span><span class="road-sign a">A56</span><span class="road-sign a">A6</span><span class="road-sign a">A580</span><span class="road-sign a">A34</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <div>
+        <h2 class="display h2">Outside the map?</h2>
+        <p>We still do planned transport anywhere on the UK mainland, at a fixed price.</p>
+      </div>
+      <div class="btns">
+        <a class="btn btn-ink btn-lg" href="contact.html" data-icon="mail">Request a quote</a>
+        <a class="btn btn-ghost btn-lg" data-tel href="#"><span class="num" data-phone></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Driven3 Recovery</title>
+  <meta name="description" content="Call, WhatsApp or message Driven3 Recovery. Phones answered 24/7 by a real person.">
+  <meta name="theme-color" content="#121314">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="contact">
+<main id="main">
+
+  <section class="page-hero dark on-dark">
+    <div class="media-bg" aria-hidden="true"><img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?auto=format&fit=crop&w=2000&q=70" alt="" fetchpriority="high"></div>
+    <div class="wrap">
+      <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+      <h1 class="display">Talk to a <span class="hl">human.</span></h1>
+      <p class="lede">If you're stuck right now, please call — it's the fastest way by far. For anything that can wait, pick whatever suits you.</p>
+      <div class="contact-options mt-l">
+        <a class="c-opt primary" data-tel href="#"><svg class="icon"><use href="#i-phone"/></svg><span>Emergency · 24/7</span><strong data-phone></strong></a>
+        <a class="c-opt" href="https://wa.me/447700900333"><svg class="icon"><use href="#i-chat"/></svg><span>WhatsApp</span><strong>Send a photo or pin</strong></a>
+        <a class="c-opt" href="mailto:hello@driven3recovery.co.uk"><svg class="icon"><use href="#i-mail"/></svg><span>Email</span><strong>hello@driven3recovery.co.uk</strong></a>
+        <a class="c-opt" href="#yard"><svg class="icon"><use href="#i-pin"/></svg><span>Yard</span><strong>Hollinwood, Oldham</strong></a>
+      </div>
+    </div>
+  </section>
+  <div class="hazard" aria-hidden="true"></div>
+
+  <section class="section">
+    <div class="wrap contact-layout">
+      <div class="form-wrap">
+        <div class="section-head reveal" style="margin-bottom:32px">
+          <span class="label">Non-urgent enquiries</span>
+          <h2 class="display h2">Book or ask anything.</h2>
+          <p class="lede">Transport bookings, scrap quotes, trade accounts — we reply within the hour, 8am to 8pm.</p>
+        </div>
+
+        <form class="form js-contact" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input id="name" autocomplete="name" required>
+              <span class="err">We'll need a name to call you by.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input id="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              <span class="err">Add a number so we can call you back.</span>
+            </div>
+          </div>
+
+          <div class="field">
+            <label id="need-label">What do you need?</label>
+            <div class="seg" role="radiogroup" aria-labelledby="need-label">
+              <input type="radio" name="need" id="n1" checked><label for="n1">Transport</label>
+              <input type="radio" name="need" id="n2"><label for="n2">Scrap quote</label>
+              <input type="radio" name="need" id="n3"><label for="n3">Tyre booking</label>
+              <input type="radio" name="need" id="n4"><label for="n4">Trade account</label>
+              <input type="radio" name="need" id="n5"><label for="n5">Something else</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="reg">Vehicle reg <small>optional</small></label>
+              <div class="plate"><span class="gb">UK</span><input id="reg" placeholder="AB12 CDE" maxlength="8" autocomplete="off"></div>
+            </div>
+            <div class="field">
+              <label for="when">When?</label>
+              <select id="when">
+                <option>As soon as possible</option>
+                <option>Today</option>
+                <option>Tomorrow</option>
+                <option>This week</option>
+                <option>I'm flexible</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="from">Collect from</label>
+              <input id="from" placeholder="Town or postcode" required>
+              <span class="err">Where should we pick it up?</span>
+            </div>
+            <div class="field">
+              <label for="to">Deliver to <small>optional</small></label>
+              <input id="to" placeholder="Town or postcode">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="msg">Anything else? <small>optional</small></label>
+            <textarea id="msg" placeholder="E.g. it's a non-runner, lowered, keys are with the garage…"></textarea>
+          </div>
+
+          <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+            <button class="btn btn-ink btn-lg" type="submit">Send enquiry <svg class="icon"><use href="#i-arrow"/></svg></button>
+            <span style="font-size:14px;color:var(--muted)">We'll only use your details to reply.</span>
+          </div>
+        </form>
+
+        <div class="form-success" role="status">
+          <span class="tick"><svg class="icon"><use href="#i-check"/></svg></span>
+          <h3 class="display h3">Thanks, <span class="js-success-name"></span>. Got it.</h3>
+          <p>We'll call you back within the hour. If it becomes urgent in the meantime, just ring us.</p>
+          <div><a class="btn btn-amber" data-tel href="#" data-icon="phone"><span class="num" data-phone></span></a></div>
+        </div>
+      </div>
+
+      <aside style="display:grid;gap:16px">
+        <div class="safety reveal">
+          <h3><svg class="icon"><use href="#i-alert"/></svg>Broken down on a motorway?</h3>
+          <ol>
+            <li>Move to the hard shoulder or emergency area.</li>
+            <li>Hazards on. Exit by the passenger side.</li>
+            <li>Wait behind the barrier, away from traffic.</li>
+            <li>Then call us. If you can't get out, call 999.</li>
+          </ol>
+        </div>
+        <div class="side-card reveal">
+          <h3>When you call, it helps to know</h3>
+          <ul class="checklist">
+            <li><span class="n">01</span>Where you are — junction, marker post or postcode</li>
+            <li><span class="n">02</span>Make, model and colour of the vehicle</li>
+            <li><span class="n">03</span>What happened, in your own words</li>
+            <li><span class="n">04</span>Where you'd like it taken</li>
+          </ul>
+        </div>
+        <div class="side-card reveal" id="yard">
+          <h3>Yard &amp; office</h3>
+          <p style="color:var(--muted)">Unit 7, Hollinwood Business Park<br>Oldham OL8 3QL</p>
+          <table class="hours">
+            <tr><td>Phones</td><td>24/7</td></tr>
+            <tr><td>Yard (Mon–Fri)</td><td>08:00–18:00</td></tr>
+            <tr><td>Yard (Sat)</td><td>09:00–14:00</td></tr>
+            <tr><td>Yard (Sun)</td><td>By appointment</td></tr>
+          </table>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<script src="assets/main.js"></script>
+</body>
+</html>
